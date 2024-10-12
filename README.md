@@ -9,7 +9,7 @@ $ docker run -it -v ./out:/out rasp_image_build
 $ docker run -it -v ./out:/out rasp_kernel_build
 ```
 
-#usage with qemu
+# usage with qemu
 ```bash
 qemu-system-aarch64 \
   -machine virt \
