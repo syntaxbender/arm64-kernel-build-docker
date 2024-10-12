@@ -1,0 +1,17 @@
+FROM ubuntu:24.04 as rpi_kernel_build
+ARG DEBIAN_FRONTEND="noninteractive"
+RUN apt update && apt install -y\
+    git\
+    bc\
+    bison\
+    flex\
+    libssl-dev\
+    make\
+    libc6-dev\
+    libncurses5-dev\
+    build-essential\
+    crossbuild-essential-arm64
+WORKDIR /rasp
+COPY src/kernel_build.sh /rasp
+RUN chmod +x /rasp/kernel_build.sh
+CMD ["/rasp/kernel_build.sh"]
