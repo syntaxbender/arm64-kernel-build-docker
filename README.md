@@ -28,8 +28,6 @@ qemu-system-aarch64 \
 ```
 
 # thanks to
-1- https://github.com/ptrsr/pi-ci/
-
-2- https://github.com/farabimahmud/emulate-raspberry-pi3-in-qemu
-
-3- https://github.com/dhruvvyas90/qemu-rpi-kernel
+- https://github.com/ptrsr/pi-ci/
+- https://github.com/farabimahmud/emulate-raspberry-pi3-in-qemu
+- https://github.com/dhruvvyas90/qemu-rpi-kernel
